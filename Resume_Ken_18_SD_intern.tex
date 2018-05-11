@@ -1,0 +1,311 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage{multicol}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Custom commands
+\newcommand{\resumeNumItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Custom commands
+\newcommand{\resumeNoItem}[1]{
+  \item[]\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\resumeNumItemListStart}{\begin{enumerate}}
+\newcommand{\resumeNumItemListEnd}{\end{enumerate}\vspace{-5pt}}
+
+
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Kenneth Chao}} & Email : \href{mailto:kchao@tamu.edu}{kchao@tamu.edu}\\
+  \href{https://sites.google.com/site/slongzchao/home}{https://sites.google.com/site/slongzchao/home} & Mobile : +1-(979)739-6337 \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Objective}
+Seeking for an intern position in 2018 in the field of Bipedal Robotics and Optimal Control
+\vspace{-0.27cm}
+\section{Qualifications}
+
+  \resumeSubHeadingListStart
+    \resumeSubItem{Robot simulation (6 years)}
+      {Simulating bipedal robots using ode solvers and physical engine-based simulators.}
+    \resumeSubItem{Embedded system software development and hardware implementation (3 years)}
+      { Bipedal walking experiments with integration of motion control and sensor data acquisition.}
+    \resumeSubItem{Optimal control (3.5 years)}
+      {Research experience about model predictive control, quadratic program-based control and trajectory optimization.}
+  \resumeSubHeadingListEnd
+%-----------SKILLS-----------------
+\section{Skills}
+\vspace{-0.5cm}
+\begin{multicols}{2}
+   \resumeSubHeadingListStart
+     \resumeSubItem{Programming and Software Package}
+     {}
+     \vspace{-0.2cm}
+     \resumeNoItem
+       {(Proficient): MATLAB \& Simulink, C/C++, Mathematica, \LaTeX, (Experienced):
+              LabVIEW, ROS, Git, IPOPT, MSC ADAMS, JAVA}
+   \resumeSubHeadingListEnd
+\columnbreak
+ \resumeSubHeadingListStart
+      \resumeSubItem{Mechanism Design and Stress Analysis}
+        {Autodesk Inventor, CATIA, SOLIDWORKS/Cosmos Analysis}
+      \resumeSubItem{Programming with Micro-controller and PCB Design }
+        {Intel 8051, Hitachi H8, Microchip PIC 18/30/32, OrCAD}
+    \resumeSubHeadingListEnd
+\end{multicols}
+\vspace{-0.9cm} 
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Ph.D. Candidate in {Mechanical Engineering (Robotics and Rehabilitation)};  Current GPA: 3.77}{Aug. 2013 -- Present}
+    \resumeSubheading
+      {National Taiwan University}{Taipei, Taiwan}
+      {M.S. in {Mechanical Engineering (Robotics)}     }{Sep. 2008 -- Aug. 2010}
+    \resumeSubheading
+      {National Tsing Hua University}{Hsinchu, Taiwan}
+      {B.S. in {Power Mechanical Engineering (System and Control)}     }{Aug. 2004 -- June 2008}      
+  \resumeSubHeadingListEnd
+  
+
+%-----------WORK EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MathWorks}{Natick, MA}
+      {Robotics Development Intern for \textbf{Robotics System Toolbox} (RST)}{May 2017 - Dec. 2017}
+      \resumeItemListStart
+        \resumeItem{Workspace Analysis}
+          {Developed the prototype of workspace analysis functionalities for manipulators including kinematic and dynamic manipulability (joint limit and joint redundancy are considered), and the associated visualization with manipulability ellipsoid and manipulability map.}
+        \resumeItem{Safe Trajectory Tracking}
+          {Implemented impedance control with trajectory scaling on Sawyer robot (from Rethink Robotics) in the simulation and experiment (via ROS and Intera SDK) using MATLAB/Simulink and RST. Contributed the Simulink version as one feature example in RST for MATLAB 2018a.}
+        \resumeItem{Others}
+          {Inverse kinematic solver benchmark and software testing for algorithms about 3-D occupancy grid map.}      
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%        \resumeItem{Others}
+%          { }          
+%                \resumeItemListStart
+%                  \resumeItem{Inverse Kinematic Solver Benchmark}
+%                    {Benchmarked IK solvers with 5 manipulators in different ROS packages including Orocos' KDL, trac\_ik, and 2 IK solvers exported from RST.}
+%                  \resumeItem{Software Testing}
+%                    {Assisted to write unit tests for developed algorithms about 3-D occupancy grid map}
+                    
+
+
+%-----------RESEARCH EXPERIENCE-----------------
+\section{Research Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Research Assistant in Human Rehabilitation Group}{Jan. 2015 - Present}
+      \resumeItemListStart
+        \resumeItem{Trajectory Optimization for Walking Motion Generation}
+          {Developing methods using trajectory optimization with direct collocation for walking with multiple contact conditions, and for robust compass gait with LQR control.}
+        \resumeItem{Biomechanical Analysis of Human Walking with Slip Using Instantaneous Capture Point (ICP)}
+          {Analysis of stepping location estimation using ICP for various robotic walkers and  humans walking with slip under different severities.}
+        \resumeItem{Bipedal Walking Experiments}
+          {Conducting bipedal walking experiments on the bipedal robot AMBER 3 for zero-moment point (ZMP)-based walking and multi-contact walking.}          
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Texas A\&M University}{College Station, TX}
+      {Graduate Assistant in AMBER Lab}{July 2014 - June 2015}
+      \resumeItemListStart
+        \resumeItem{Quadratic Program-based Control}
+          {Developed an optimal controller with Control Lyapunov Function unifying Center of Mass (COM) planning (using model predictive control) and locomotion control into a single framework.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+       {National Taiwan University}{Taipei, Taiwan}
+       {Research Assistant}{Feb. 2012 - May 2013}
+       \resumeItemListStart
+         \resumeItem{IK Solver for Singular Configuration}
+           {Designed a real-time IK solver combined Jacobian method with Cyclic Coordinate Descent (CCD) which is capable of solving motions with stretching limbs.}
+         \resumeItem{Human-like Walking Motion Generation}
+           {Using the developed IK solver, generated the walking motion with human walking features (knee stretching and foot rolling motion) and tested in the experiment.}
+         \resumeItem{Computed Torque Control of Bipedal Walking Experiment via EtherCAT}
+           {Upgraded the electrical system of Nino's bipedal mechatronics, and implemented computed torque control with sliding mode control for walking upstairs and downstairs.}
+      \resumeItemListEnd           
+ 
+     \resumeSubheading
+       {National Taiwan University}{Taipei, Taiwan}
+       {Graduate Student}{Sep. 2008 - Aug. 2010}
+       \resumeItemListStart
+         \resumeItem{Bipedal Mechanism Design for a Humanoid Robot -- Nino}
+           {Designed and performed stress analysis of a 12-DOF bipedal mechanism with a 2-DOF trunk mechanism for a human-sized humanoid robot -- Nino.}
+         \resumeItem{Development of Distributed Eletrical System for Nino}
+           {Developed the firmware and the control boards with micro-controllers for Nino's distributed electrical system via CAN bus and USB.}
+         \resumeItem{Gait Coordination Control}
+           {Using filtered ground reaction force and trajectory generation for end-effector and COM, designed a controller to improve the adaptiveness of bipedal walking under unknown stepping height.}
+       \resumeItemListEnd
+   
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+%\section{Projects}
+%  \resumeSubHeadingListStart
+%    \resumeSubItem{QuantSoftware Toolkit}
+%      {Open source python library for financial data analysis and machine learning for finance.}
+%    \resumeSubItem{Github Visualization}
+%      {Data Visualization of Git Log data using D3 to analyze project trends over time.}
+%    \resumeSubItem{Recommendation System}
+%      {Music and Movie recommender systems using collaborative filtering on public datasets.}
+%    \resumeSubItem{Mac Setup}
+%      {Book that gives step by step instructions on setting up developer environment on Mac OS.}
+%  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Undergraduate Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{2-DOF Biomimetic Robotic Fish}
+      {Designed and developed a robotic fish with flexible, waterproof skin made from silicone rubber. The robotic fish can perform 2D motion under remote control via  Bluetooth.}
+    \resumeSubItem{Automatic Page-flipping Machine}
+      {Designed and developed the mechatornic system with a micro-controller and two servo motors. The machine can perform page flipping for common books (no customization required).}
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------------
+\section{Selected Publications}
+  \resumeNumItemListStart
+\resumeNumItem
+{\underline{Kenneth Chao} and Pilwon Hur, ``A Step Towards Generating Human-like Walking Gait via Trajectory Optimization through Contact for a Bipedal Robot with One-sided Springs on Toes,''  \textit{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, Vancouver, BC, Canada, 2017.}  
+  
+\resumeNumItem
+{\underline{Kenneth Chao}, Matthew Powell, Aaron Ames and Pilwon Hur, ``Unification of Locomotion Pattern Generation and Control Lyapunov Function-Based Quadratic Programs,''
+             	\textit{American Control Conference},
+             	Boston, MA, USA, 2016.}
+\resumeNumItem
+{\underline{Kenneth Chao} and Pilwon Hur,
+	``Toward General Capture Point-Based Analysis on Standing, Walk and Slip: the Connection between Robotic Motions to Human Behaviors,''
+	\textit{Dynamic Walking},
+	Holly, MI, USA, 2016.}    
+\resumeNumItem
+{\underline{Kenneth Chao}, Jiu-Lou Yan, Meng-Ku Chi, and Han-Pang Huang,
+	``Natural Walking Pattern Generation for Humanoid Robots with Toe and Heel Mechanism,''
+	\textit{The 43rd International Symposium on Robotics (ISR)},
+	Taipei, Taiwan,
+2012.}
+\resumeNumItem
+{Pin-Yong Ling, \underline{Kenneth Chao}, Han-Pang Huang, and Jiu-Lou Yan,
+	``Footprint Searching and Trajectory Design of a Humanoid Robot,''
+	\textit{IEEE International Conference on Robotics and Biomimetics (ROBIO)},
+2012.}
+    	
+  \resumeNumItemListEnd
+
+%-----------PATENT-----------------
+%\section{Patent}
+
+%-----------HONORS AND AWARDS-----------------
+\section{Honors and Awards}
+  \resumeSubHeadingListStart
+        \resumeSubItem{Texas A\&M University Graduate Student Travel Award, 2017}
+        {Award granted for attending IROS 2017.}     
+      \resumeSubItem{Studying Aboard Scholarship, 2015--2016}
+      {Taiwan government scholarship for outstanding students to pursue graduate study abroad.}
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+\section{Teaching in Class}
+  \resumeSubHeadingListStart
+      \resumeSubItem{Grader and Lecture TA (Texas A\&M University)}
+      {Dynamic System and Control (Fall 2013 \& Spring 2014), Advanced System Dynamics and Control (Fall 2013), Engineering Laboratory (Fall 2014), Material in Design (Fall 2014), Mechanical Vibration (Spring 2015).}
+      \resumeSubItem{Lab TA (Texas A\&M University)}
+      {Heat Transfer Lab (Spring 2018).}      
+  \resumeSubHeadingListEnd
+
+\end{document}
